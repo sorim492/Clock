@@ -7,6 +7,12 @@ h1{
     text-align: center;
 }
 
+select{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
 footer{
     text-align: center;
 }
