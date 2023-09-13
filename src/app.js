@@ -18,6 +18,16 @@ function updateTime(){
         parisDateElement.innerHTML = parisTime.format("dddd MMMM D YYYY");
         parisTimeElement.innerHTML = `${parisTime.format("h:mm:ss")} <small>${parisTime.format("A")}</small>`;
     }
+
+    //Moscow
+    let moscowElement = document.querySelector("#moscow");
+    if(moscowElement){
+        let moscowDateElement = moscowElement.querySelector(".date");
+        let moscowTimeElement = moscowElement.querySelector(".time");
+        let moscowTime = moment().tz("Europe/moscow");
+        moscowDateElement.innerHTML = moscowTime.format("dddd MMMM D YYYY");
+        moscowTimeElement.innerHTML = `${moscowTime.format("h:mm:ss")} <small>${moscowTime.format("A")}</small>`;
+    }
 }
 
 function changeCity(event){
